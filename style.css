@@ -23,7 +23,9 @@ body{
     color: black;
 }
     .muestra{
-        padding: 35px;
+        border: none;
+        background: none;
+        padding: 25px;
         font-size: 50px;
         font-weight: 900;
     }
