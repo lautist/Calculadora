@@ -53,3 +53,19 @@ body{
             cursor: pointer;
             background: rgb(118, 118, 228);
         }
+
+        @media only screen and (max-width: 1000px) {
+            .calGeneral{
+                width: 50%;
+            }
+          }
+          @media only screen and (max-width: 650px) {
+            .calGeneral{
+                width: 70%;
+            }
+          }
+          @media only screen and (max-width: 500px) {
+            .calGeneral{
+                width: 90%;
+            }
+          }  
