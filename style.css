@@ -54,6 +54,22 @@ body{
             background: rgb(118, 118, 228);
         }
 
+    footer{
+        padding: 10px;
+
+        background: #2e2c38;
+    }
+        footer a{
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 800;
+        }
+            footer a:hover{
+                color: #bebebe;
+            }
+
+        
         @media only screen and (max-width: 1000px) {
             .calGeneral{
                 width: 50%;
