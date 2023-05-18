@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    background: #393646;
+}
+
+.calGeneral{
+    box-shadow: 0 0 20px black;
+    height: auto;
+    width: 30%;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.total{
+    border-radius: 10px 10px 0 0;
+    height: 125px;
+    width: 100%;
+    background: #bebebe;
+    color: black;
+}
+    .muestra{
+        padding: 35px;
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+.btn-primera{
+    background: rgb(34, 34, 34);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+    .btn-style{
+        width: 25%;
+        /* margin: 1px; */
+        padding: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: 800;
+        font-size: 50px;
+        border: none;
+        background: none;
+    }
+        .btn-style:hover{
+            cursor: pointer;
+            background: rgb(118, 118, 228);
+        }
