@@ -1,5 +1,3 @@
-// app.js
-
 // DOM Elements
 const display = document.getElementById('display');
 const calculator = document.getElementById('calculator');
