@@ -1,87 +1,153 @@
-*{
+/* style.css */
+
+* {
     margin: 0;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
+body {
     background: #393646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-.calGeneral{
+.calGeneral {
     box-shadow: 0 0 20px black;
     height: auto;
-    width: 30%;
-    margin: 50px auto;
+    width: 350px;
+    margin: 20px auto;
     border-radius: 10px;
+    overflow: hidden;
+    background: #2e2c38;
 }
 
-.total{
+.total {
     border-radius: 10px 10px 0 0;
-    height: 125px;
+    height: 100px;
     width: 100%;
     background: #bebebe;
     color: black;
-}
-    .muestra{
-        border: none;
-        background: none;
-        padding: 25px;
-        font-size: 50px;
-        font-weight: 900;
-    }
-
-.btn-primera{
-    background: rgb(34, 34, 34);
-    height: 100px;
-    width: 100%;
     display: flex;
-    flex-flow: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
 }
 
-    .btn-style{
-        width: 25%;
-        /* margin: 1px; */
-        padding: 20px;
-        text-decoration: none;
-        color: white;
-        font-weight: 800;
-        font-size: 50px;
-        border: none;
-        background: none;
+.muestra {
+    border: none;
+    background: none;
+    font-size: 3.5em;
+    font-weight: 900;
+    color: black;
+    width: 100%;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    background: #393646;
+    padding: 1px;
+    border-radius: 0 0 10px 10px;
+}
+
+.btn-style {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 2.5em;
+    border: none;
+    background: #393646;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.btn-style:hover {
+    background: #545062;
+}
+
+.btn-style.clear {
+    background: #d9534f;
+}
+
+.btn-style.clear:hover {
+    background: #c9302c;
+}
+
+.btn-style.operator {
+    background: #f0ad4e;
+}
+
+.btn-style.operator:hover {
+    background: #ec971f;
+}
+
+.btn-style.equals {
+    /* grid-column: span 2; */
+    background: #5cb85c;
+    border-bottom-right-radius: 10px;
+}
+
+.btn-style.equals:hover {
+    background: #449d44;
+}
+
+.btn-style.zero {
+    /* grid-column: span 2; */
+    border-bottom-left-radius: 10px;
+}
+
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #2e2c38;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+footer a:hover {
+    color: #bebebe;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .calGeneral {
+        width: 80%;
     }
-        .btn-style:hover{
-            cursor: pointer;
-            background: rgb(118, 118, 228);
-        }
+}
 
-    footer{
-        padding: 10px;
-
-        background: #2e2c38;
+@media only screen and (max-width: 480px) {
+    .calGeneral {
+        width: 95%;
     }
-        footer a{
-            color: white;
-            text-decoration: none;
-            font-size: 25px;
-            font-weight: 800;
-        }
-            footer a:hover{
-                color: #bebebe;
-            }
-
-        
-        @media only screen and (max-width: 1000px) {
-            .calGeneral{
-                width: 50%;
-            }
-          }
-          @media only screen and (max-width: 650px) {
-            .calGeneral{
-                width: 70%;
-            }
-          }
-          @media only screen and (max-width: 500px) {
-            .calGeneral{
-                width: 90%;
-            }
-          }  
+    .muestra {
+        font-size: 3em;
+    }
+    .btn-style {
+        font-size: 2em;
+        height: 70px;
+    }
+}

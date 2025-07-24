@@ -2,60 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Calculador simplre">
-    <meta name="keywords" content="calculadora">
+    <meta name="description" content="Calculadora simple">
+    <meta name="keywords" content="calculadora, javascript, html, css">
     <meta name="author" content="Lautaro Stefanini">
     <meta name="theme-color" content="#393646" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Calcualdora</title>
+    <title>Calculadora Moderna</title>
 </head>
 <body>
-    
 
     <div class="calGeneral" id="calculator">
         <div class="total">
-            <button class="muestra" id="display"></button>
+            <div class="muestra" id="display">0</div>
         </div>
-        <div class="btn-primera">
-            <button class="button btn-style" onclick="clearDisplay()">C</button>
-            <button class="button btn-style" onclick="appendOperator('-')">-</button>
-            <button class="button btn-style" onclick="appendOperator('+')">+</button>
-            <button class="button btn-style" onclick="appendOperator('/')">/</button>
+
+        <div class="btn-grid">
+            <button class="button btn-style clear">C</button>
+            <button class="button btn-style operator">/</button>
+            <button class="button btn-style operator">*</button>
+            <button class="button btn-style operator">-</button>
             
-        </div>
-        <div class="btn-primera">
-            <button class="button btn-style" onclick="appendNumber(7)">7</button>
-            <button class="button btn-style" onclick="appendNumber(8)">8</button>
-            <button class="button btn-style" onclick="appendNumber(9)">9</button>
-            <button class="button btn-style" onclick="appendOperator('*')">*</button>
+            <button class="button btn-style number">9</button>
+            <button class="button btn-style number">8</button>
+            <button class="button btn-style number">7</button>
+            <button class="button btn-style operator">+</button>
             
-        </div>
-        <div class="btn-primera">
-            <button class="button btn-style" onclick="appendNumber(4)">4</button>
-            <button class="button btn-style" onclick="appendNumber(5)">5</button>
-            <button class="button btn-style" onclick="appendNumber(6)">6</button>
-            <button class="button btn-style" onclick="calculate()">=</button>
+            <button class="button btn-style number">4</button>
+            <button class="button btn-style number">5</button>
+            <button class="button btn-style number">6</button>
+            <button class="button btn-style equals">=</button>
             
+            <button class="button btn-style number">3</button>
+            <button class="button btn-style number">2</button>
+            <button class="button btn-style number">1</button>
+            
+            <button class="button btn-style number zero">0</button>
+
         </div>
-        <div class="btn-primera" style="border-radius: 0 0 10px 10px;">
-            <button class="button btn-style" onclick="appendNumber(1)">1</button>
-            <button class="button btn-style" onclick="appendNumber(2)">2</button>
-            <button class="button btn-style" onclick="appendNumber(3)">3</button>
-            <button class="button btn-style" onclick="appendNumber(0)">0</button>
-        </div>
-
-
-
-
     </div>
 
-
-    
     <footer>
-        <a href="https://github.com/lautist">Lautist</a>
+        <a href="https://github.com/lautist" target="_blank" rel="noopener noreferrer">Lautist</a>
     </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
